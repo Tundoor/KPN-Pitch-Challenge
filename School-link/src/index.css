@@ -1,0 +1,50 @@
+:root {
+    --subtext : "Inter", sans-serif;
+    --title-font: "Merriweather", serif;
+    --playfair-font: "Playfair Display", serif;
+}
+
+/* Navbar */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-section {
+    position: sticky;
+    z-index: 1000;
+}
+.nav-div {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.nav-link-div {
+    margin-right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 1.4rem;
+    font-family: var(--subtext);
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    font-size: 1.7rem;
+}
+
+.hamburger-icon-div {
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
