@@ -2,6 +2,7 @@
     --subtext : "Inter", sans-serif;
     --title-font: "Merriweather", serif;
     --playfair-font: "Playfair Display", serif;
+    --link-size: 1.4rem
 }
 
 /* Navbar */
@@ -10,16 +11,14 @@
     padding: 0;
 }
 
-.nav-section {
-    position: sticky;
-    z-index: 1000;
-}
 .nav-div {
+    position: fixed;
     width: 100%;
     height: 10%;
     display: flex;
     justify-content: space-between;
-    margin-top: 10px;
+    z-index: 1000;
+    background-color: transparent;
 }
 
 .nav-link-div {
@@ -32,13 +31,14 @@
 .nav-link {
     margin-left: 20px;
     margin-right: 20px;
-    font-size: 1.4rem;
+    font-size: var(--link-size);
     font-family: var(--subtext);
     cursor: pointer;
 }
 
 .nav-link:hover {
     font-size: 1.7rem;
+    text-decoration: underline;
 }
 
 .hamburger-icon-div {
@@ -47,4 +47,54 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+}
+
+/* Nav Modal */
+
+.hamburger-div {
+    height: 100%;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 200;
+    background-color: white;
+}
+
+.menu-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-bottom: 200px;
+}
+
+.menu-link {
+    margin-top: 50px;
+    font-family: var(--subtext);
+    font-size: var(--link-size);
+}
+
+.menu-link:hover {
+    font-size: 1.7rem;
+    text-decoration: underline;
+}
+
+.announcement-div {
+    
+    display: none;
+}
+
+
+/* Welcome Section */
+
+.header {
+    width: 100%;
+    height: 700px;
+    background-image: linear-gradient(
+        to right, rgba(0, 0, 0, 0.50) , rgba(0, 0, 0, 0.50)), url("./assets/pexels-pixabay-256417.jpg")
+    ;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
