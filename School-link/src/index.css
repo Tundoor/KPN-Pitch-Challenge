@@ -74,6 +74,7 @@
     margin-top: 50px;
     font-family: var(--subtext);
     font-size: var(--link-size);
+    cursor: pointer;
 }
 
 .menu-link:hover {
@@ -81,6 +82,21 @@
     text-decoration: underline;
 }
 
+.announcements-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#expand-btn {
+    width: 30px;
+    rotate: 180deg;
+}
+
+.announcements-header p{
+    margin-top: 0;
+    margin-right: 20px;
+}
 .announcement-div {
     
     display: none;
