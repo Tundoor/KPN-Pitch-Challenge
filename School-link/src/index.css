@@ -82,26 +82,15 @@
     text-decoration: underline;
 }
 
-.announcements-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+/* Overlay */
 
-#expand-btn {
-    width: 30px;
-    rotate: 180deg;
+.overlay {
+    width: 100%;
+    height: 100%;
+    filter: blur(10px);
+    position: absolute;
+    z-index: 100;
 }
-
-.announcements-header p{
-    margin-top: 0;
-    margin-right: 20px;
-}
-.announcement-div {
-    
-    display: none;
-}
-
 
 /* Welcome Section */
 
