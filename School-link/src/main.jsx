@@ -5,11 +5,11 @@ import Store from './store.jsx'
 import Navbar from './navbar.jsx'
 import Welcome from './Welcome.jsx'
 import Contact from './Contact.jsx'
-import Announcements from './Announcements.jsx'
-import Resources from './Resources.jsx'
-import StudyArea from './StudyArea.jsx'
-import Community from './Community.jsx'
-import Settings from './Settings.jsx'
+import Announcements from './menu pages/Announcements.jsx'
+import Resources from './menu pages/Resources.jsx'
+import StudyArea from './menu pages/StudyArea.jsx'
+import Community from './menu pages/Community.jsx'
+import Settings from './menu pages/Settings.jsx'
 
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 
